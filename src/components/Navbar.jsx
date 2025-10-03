@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -35,13 +36,14 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> NASA_SPACE_</span>{" "}
-            APP_BHOPAL
+            <span className="text-glow text-foreground">
+              <img className="h-16" src={logo} alt="" />
+               </span>
           </span>
         </a>
 
         {/* desktop nav */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex justify-between space-x-10 lg:space-x-8 text-md font-medium">
           {navItems.map((item, key) => (
             <a
               key={key}

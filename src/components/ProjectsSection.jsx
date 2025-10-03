@@ -165,16 +165,17 @@ to return for the 2025 event.” - Local Lead Siddharth
 
           {/* Swiper Container */}
           <div 
-            className="relative overflow-hidden mb-8"
+            className="relative  overflow-hidden mb-8"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <div
-              className="flex transition-transform duration-500 ease-out gap-8"
-              style={{
-                transform: `translateX(-${currentIndex * (100 / slidesPerView)}%)`,
-              }}
-            >
+          <div
+  className="flex gap-8 transition-transform duration-400"
+  style={{
+    transform: `translateX(-${currentIndex * (100 / slidesPerView)}%)`,
+    transitionTimingFunction: "cubic-bezier(0.45, 0, 0.55, 1)", // smooth curve
+  }}
+>
               {galleryImages.map((image) => (
                 <div
                   key={image.id}

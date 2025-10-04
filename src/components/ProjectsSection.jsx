@@ -96,6 +96,16 @@ const galleryImages = [
     id: 10,
     url: Ritesh,
     alt: "Space Exploration"
+  },
+  {
+    id: 10,
+    url: anand,
+    alt: "Space Exploration"
+  },
+  {
+    id: 10,
+    url: abinnav,
+    alt: "Space Exploration"
   }
 ];
 
@@ -180,12 +190,12 @@ to return for the 2025 event.” - Local Lead Siddharth
                 <div
                   key={image.id}
                   className="swiper-slide flex-shrink-0 rounded-lg overflow-hidden shadow-lg card-hover"
-                  style={{ width: `calc(${100 / slidesPerView}% - 12px)` }}
+                  style={{ width: `calc(${94 / slidesPerView}% - 12px)` }}
                 >
                   <img
                     src={image.url}
                     alt={image.alt}
-                    className="w-full h-110 object-contain transition-transform duration-300 hover:scale-110"
+                    className="w-full h-120 object-contain transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               ))}
